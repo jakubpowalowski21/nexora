@@ -1,19 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
+  agentRules: false,
+  devIndicators: false,
+  images: {
+    qualities: [75, 85],
   },
-  cacheComponents: true,
-  partialPrefetching: true,
   turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+    rules: { "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" } },
   },
 };
 

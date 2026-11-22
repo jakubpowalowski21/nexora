@@ -1,0 +1,7 @@
+.env*
+.stripe-cli/
+test-results/
+playwright-report/
+.next/
+node_modules/
+.git/
